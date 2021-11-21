@@ -1,0 +1,140 @@
+.container {
+  width: 80%;
+  height: 460px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px gray solid;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.nav {
+  display: flex;
+  color: rgb(51, 51, 51);
+  justify-content: space-between;
+  padding: 1rem 0.8rem 0 0.8rem;
+  border-bottom: 1px #707070 solid;
+  flex-direction: row-reverse;
+  font-size: 14px;
+  width: 90%;
+  margin: auto;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 320px;
+}
+
+.nav ul li a {
+  color: #707070;
+  padding: 0.75rem;
+  margin: 0 0.35rem;
+}
+.nav ul li a:hover {
+  border-bottom: 2px black solid;
+}
+.menu {
+  margin-right: -15px;
+}
+.mainForm {
+  width: 90%;
+  display: flex;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+}
+.formBox {
+  width: 27%;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  text-align: center;
+}
+.formInput {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  text-align: center;
+}
+.formChecked {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 280px;
+  margin-right: 80px;
+}
+.check {
+  background-color: lightblue !important;
+  height: 20px;
+  width: 20px;
+  margin: 0 6px 1px 0;
+}
+
+.checkBox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 220px;
+  margin-top: 12px;
+}
+.inputBox {
+  background-color: rgb(227, 237, 247);
+  outline: none;
+  border: none;
+  margin: 8px 20px 0 0;
+  border-radius: 10px;
+  height: 30px;
+  width: 150px;
+  padding: 5px;
+  text-align: right;
+}
+.selected {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.bigInput {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 55px;
+  font-size: 12px;
+}
+.flexInput {
+  display: flex;
+  flex-direction: column;
+}
+.inputbigBox {
+  background-color: rgb(227, 237, 247);
+  outline: none;
+  border: none;
+  margin: 8px 20px 0 0;
+  border-radius: 10px;
+  height: 45px;
+  width: 460px;
+  padding: 5px;
+  text-align: right;
+  margin: 10px 0;
+}
+.inputbig2Box {
+  background-color: rgb(227, 237, 247);
+  outline: none;
+  border: none;
+  margin: 8px 20px 0 0;
+  border-radius: 10px;
+  height: 100px;
+  width: 460px;
+  padding: 5px;
+  text-align: right;
+}
+.textInput {
+  margin-left: 17px;
+}
+.checkInputBox {
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 54px;
+}

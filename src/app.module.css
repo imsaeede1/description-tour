@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "kalame";
+  src: url(./fonts/eot/KalamehWeb_Regular.eot);
+  src: url(./fonts/ttf/KalamehWeb_Regular.ttf);
+  src: url(./fonts/woff2/KalamehWeb_Regular.woff2);
+  src: url(./fonts/woff/KalamehWeb-Regular.woff) format("woff"),
+    url("./fonts/woff/KalamehWeb-Regular.woff") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #c4dbd8;
+  width: 100%;
+  text-align: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: kalame, "kalame", tahoma;
+}
