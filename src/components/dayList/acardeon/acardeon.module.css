@@ -1,0 +1,72 @@
+.containerAcardeon {
+  background-color: #e3f7f3;
+  width: 280px;
+  /* height: auto; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  border-radius: 7px;
+  margin-bottom: 10px;
+  margin-right: -190px;
+}
+h5 {
+  border-bottom: #ffffff 2px solid;
+  padding: 8px 0;
+}
+.inputBox {
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px rgb(190, 190, 190) solid;
+  text-align: right;
+  width: 65%;
+  padding: 2px;
+}
+.inputBox1 {
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px rgb(190, 190, 190) solid;
+  text-align: right;
+  width: 75%;
+  padding: 3px;
+}
+.inputBox2 {
+  border-radius: 5px;
+  outline: none;
+  border: 1.5px rgb(190, 190, 190) solid;
+  text-align: right;
+  width: 65%;
+  height: 80px;
+  padding: 2px;
+  margin-bottom: 5px;
+}
+.formInput {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 90%;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.text {
+  margin: 0px;
+}
+.text1 {
+  margin: 7px;
+}
+.boxes {
+  display: flex;
+  width: 230px;
+  margin-left: -10px;
+  margin-top: -10px;
+  font-size: 10px;
+}
+.titles {
+  margin: 0 0 2px 0;
+  font-size: 11px !important;
+}
+.btnacardeon {
+  margin: -12px 0 0 0;
+  padding: 0;
+  background-color: #ffffff;
+}

@@ -1,15 +1,16 @@
 .container {
   width: 90%;
   height: auto;
+  background-color: #ffffff;
   border-radius: 10px;
+  border: 1px gray solid;
   margin: auto;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 .nav {
   display: flex;
   color: rgb(51, 51, 51);
-  justify-content: space-between;
-  padding: 1rem 0.8rem 0 0.8rem;
   border-bottom: 1px #707070 solid;
   flex-direction: row-reverse;
   font-size: 14px;
@@ -38,7 +39,6 @@
 .mainForm {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   margin-left: 60px;
   display: flex;
   justify-content: space-around;
@@ -93,7 +93,6 @@
 .selected {
   display: flex;
   flex-direction: row-reverse;
-  text-align: right;
 }
 .bigInput {
   display: flex;
@@ -135,70 +134,5 @@
   font-size: 13px;
   display: flex;
   justify-content: flex-end;
-  margin-right: 52px;
-}
-@media (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  .mainForm {
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: right;
-    width: 100%;
-    margin-left: -5px;
-  }
-  .formInput {
-    margin-left: 20px;
-    width: 330px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-  }
-  .checkInputBox {
-    display: flex;
-    flex-direction: column;
-  }
-  .inputbigBox {
-    display: flex;
-    flex-direction: column;
-    width: 155px;
-    margin-left: 21px;
-  }
-  .inputbig2Box {
-    display: flex;
-    flex-direction: column;
-    width: 155px;
-    margin-left: 21px;
-    margin-right: 60px;
-  }
-  .flexInput {
-    width: 340px;
-  }
-  .text {
-    width: 150px;
-    margin-left: -4px;
-  }
-
-  .textInput {
-    margin-right: 21px;
-  }
-  .bigInput {
-    margin-right: 10px;
-  }
-  .inputBox {
-    width: 150px;
-  }
-  .formChecked {
-    width: 340px;
-  }
-  .checkBox {
-    margin-right: 10px;
-  }
-  .formBox {
-    margin-top: 2px;
-    text-align: right;
-  }
+  margin-right: 58px;
 }

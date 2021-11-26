@@ -1,0 +1,61 @@
+.firstRow {
+  background-color: #707070;
+}
+.slideShow {
+  width: 30%;
+  border-radius: 7px !important;
+}
+.slideContainer {
+  height: 290px;
+  background-color: rgb(227, 237, 247);
+  margin: 15px 100px 10px 0;
+  border-radius: 7px;
+}
+.mainTableSlider {
+  display: flex;
+}
+.navSlider {
+  width: 86%;
+  border-bottom: 1px #000 solid;
+  margin: auto;
+  text-align: right;
+  font-size: small;
+  padding: 5px 0;
+}
+/* .circleBtn {
+  border-radius: 50% !important;
+  border: #707070 1px solid !important;
+} */
+
+.manImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgb(197, 197, 197);
+  margin-top: 2px;
+}
+.flexMain {
+  font-size: 12px;
+}
+.textContent {
+  width: 200px;
+  text-align: center;
+  height: 20px;
+}
+.rowText {
+  margin: 10px 15px 2px 10px;
+}
+
+.pBold {
+  font-size: 12px;
+}
+.pNormal {
+  font-size: 12px;
+  color: #707070;
+}
+.cama {
+  margin-right: 25px;
+}
+.camaName {
+  padding-left: 25px;
+}

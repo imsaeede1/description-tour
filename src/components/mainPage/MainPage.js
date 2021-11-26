@@ -1,8 +1,9 @@
 import styles from "./mainPage.module.css";
+
 const MainPage = () => {
   return (
     <div className={styles.container}>
-      <nav className={styles.nav}>
+      {/* <nav className={styles.nav}>
         <div className={styles.menu}>
           <ul>
             <li>
@@ -17,7 +18,7 @@ const MainPage = () => {
             <li></li>
           </ul>
         </div>
-      </nav>
+      </nav> */}
       <div className={styles.mainForm}>
         <div className={styles.formBox}>
           <div className={styles.formInput}>
@@ -47,9 +48,8 @@ const MainPage = () => {
               className={styles.inputBox}
             >
               <option selected className={styles.selected}></option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="1">آبشار</option>
+              <option value="2">دریاچه</option>
             </select>
           </div>
           <div className={styles.formInput}>
@@ -70,9 +70,10 @@ const MainPage = () => {
               className={styles.inputBox}
             >
               <option selected className={styles.selected}></option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value="1">ایرانگردی</option>
+              <option value="2">کمپینگ</option>
+              <option value="3">انفرادی</option>
+              <option value="4">خارجی</option>
             </select>
           </div>
           <div className={styles.formInput}>
@@ -122,16 +123,16 @@ const MainPage = () => {
           </div>
         </div>
         <div className={styles.formInput}>
-          <p className={styles.text}>دسته بندی</p>
+          <p className={styles.text}>لوازم ضروری</p>
           <select
             class="form-select form-select-sm"
             aria-label=".form-select-sm example"
             className={styles.inputBox}
           >
             <option selected className={styles.selected}></option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">کوله پشتی</option>
+            <option value="2">لباس گرم</option>
+            <option value="3">پاسپورت</option>
           </select>
         </div>
       </div>

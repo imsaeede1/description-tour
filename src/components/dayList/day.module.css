@@ -1,0 +1,155 @@
+.dayBox {
+  width: 325px;
+  height: auto;
+  margin: 10px;
+  border-radius: 7px;
+  background-color: #ebf7f5;
+}
+.container {
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+  width: 690px;
+
+  flex-wrap: wrap;
+}
+.headTitle {
+  border-bottom: 1.5px rgb(155, 154, 154) solid;
+  text-align: right;
+  margin: 2px 15px 10px 10px;
+  padding-bottom: 3px;
+}
+.flewRowCost {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 12px;
+  justify-content: space-around;
+  border-radius: 7px;
+  border: #9e9e9e 1px solid;
+  margin: 3px 14px 10px 10px;
+  background-color: #f1f9f8;
+}
+
+.costHeader {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 4px 0;
+}
+.detailCost {
+  margin: 4px 0;
+  border-left: 1px solid rgb(134, 134, 134);
+  padding: 0 10px 0 20px;
+  height: 25px;
+}
+.detailCost2 {
+  margin: 4px 0;
+  border-left: 1px solid rgb(124, 124, 124);
+  padding-left: 40px;
+  height: 25px;
+  width: 30px;
+}
+.detailCost3 {
+  margin: 4px 0;
+  width: 30px;
+  padding-left: 20px;
+  height: 25px;
+}
+.icon {
+  margin-right: 10px;
+  width: 20px;
+}
+.btns {
+  background-color: #303481;
+  width: 63px;
+  border-radius: 10px;
+  margin: 7px 12px;
+}
+.deleteBtn {
+  background-color: #303481;
+  border: 1px solid #303481;
+  color: white;
+  margin-left: 5px;
+}
+.modalBtn {
+  background-color: #303481;
+  border: 1px solid #303481;
+  color: white;
+  border-right: 1px white solid;
+  padding-right: 5px;
+}
+.mainBox {
+  background-color: #ebf7f5;
+  border-radius: 7px 7px 0 0;
+}
+.rowItemsBox {
+  height: 100px;
+  margin: 15px;
+}
+.inputBox {
+  width: 100px;
+  height: 20px;
+  margin: 2px 0px 2px 0;
+  border: 1px solid rgb(134, 134, 134);
+  border-radius: 7px;
+  border: white 1px solid;
+}
+.imgBox {
+  width: 80px;
+  height: 80px;
+  margin: -5px 10px 0 10px;
+}
+
+.textModal {
+  font-size: 12px;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+.imgPriceBox {
+  border: #d9e2e1 1px solid;
+  border-radius: 7px;
+}
+.imgPriceBox:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+.containerMeal {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: #555555;
+  margin-right: 4px;
+}
+.mealRow {
+  display: flex;
+  background-color: #f1f9f8;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-radius: 7px;
+  border: 1px solid #adadad;
+  width: 93%;
+  margin: auto;
+  margin-top: 3px;
+}
+.titlepText {
+  margin: 8px;
+}
+
+.priceOtherBox {
+  display: flex;
+}
+/* .acaardeon {
+  visibility: hidden;
+} */
+.btnInput {
+  background-color: #ebf7f5;
+  width: 20%;
+  float: right;
+  border: #cacccc 1px solid;
+  border-radius: 7px;
+}
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
