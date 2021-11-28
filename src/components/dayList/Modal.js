@@ -1,6 +1,6 @@
 import styles from "./day.module.css";
 import { useState } from "react";
-const Modal = ({ meals, addMealsHandler }) => {
+const Modal = ({ meals, addMealsHandler, id }) => {
   const [currentMeals, setCurrentMeals] = useState(meals);
   const onChange = (event, index) => {
     let ids = [...currentMeals]; // create the copy of state array

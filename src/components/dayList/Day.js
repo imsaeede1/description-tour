@@ -53,7 +53,7 @@ const Day = ({ day, deleteHandler }) => {
         </button>
       </div>
 
-      <Modal meals={meals} addMealsHandler={addMealsHandler} />
+      <Modal meals={meals} addMealsHandler={addMealsHandler} id={day.id} />
     </div>
   );
 };

@@ -11,7 +11,7 @@ const DayList = ({ days, setDays }) => {
         return (
           <Day
             day={day}
-            key={index}
+            key={day.id}
             deleteHandler={() => deleteHandler(day.id)}
           />
         );

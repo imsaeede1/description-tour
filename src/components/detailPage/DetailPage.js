@@ -31,7 +31,7 @@ const DetailPage = () => {
             </div>
           </div>
           <div className={styles.costOther}>
-            <p className={styles.costHeader}>مجموعه هزینه ها</p>
+            <p className={styles.costHeader}>صبحانه</p>
             <div className={styles.flewRowCost}>
               <p className={styles.detailCost}>پیش بینی : 90هزار تومان</p>
               <p className={styles.detailCost2}>اجرا : 100هزار تومان</p>
@@ -39,7 +39,7 @@ const DetailPage = () => {
             </div>
           </div>
           <div className={styles.costOther}>
-            <p className={styles.costHeader}>مجموعه هزینه ها</p>
+            <p className={styles.costHeader}>میان وعده</p>
             <div className={styles.flewRowCost}>
               <p className={styles.detailCost}>پیش بینی : 90هزار تومان</p>
               <p className={styles.detailCost2}>اجرا : 100هزار تومان</p>

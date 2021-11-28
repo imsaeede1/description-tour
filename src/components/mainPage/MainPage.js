@@ -1,24 +1,11 @@
 import styles from "./mainPage.module.css";
+import React, { useState } from "react";
+import Calendar from "react-calendar";
 
 const MainPage = () => {
+  const [value, onChange] = useState(new Date());
   return (
     <div className={styles.container}>
-      {/* <nav className={styles.nav}>
-        <div className={styles.menu}>
-          <ul>
-            <li>
-              <a href="#h">گزارشات</a>
-            </li>
-            <li>
-              <a href="#t">جزییات تور</a>
-            </li>
-            <li>
-              <a href="#B">مشخصات اولیه</a>
-            </li>
-            <li></li>
-          </ul>
-        </div>
-      </nav> */}
       <div className={styles.mainForm}>
         <div className={styles.formBox}>
           <div className={styles.formInput}>
@@ -31,7 +18,9 @@ const MainPage = () => {
           </div>
           <div className={styles.formInput}>
             <p className={styles.text}>درجه سختی</p>
-            <input type="text" className={styles.inputBox} />
+            <div className={styles.inputBox}>
+              <Calendar onChange={onChange} value={value} />
+            </div>
           </div>
         </div>
 
@@ -153,3 +142,22 @@ const MainPage = () => {
 };
 
 export default MainPage;
+
+{
+  /* <nav className={styles.nav}>
+        <div className={styles.menu}>
+          <ul>
+            <li>
+              <a href="#h">گزارشات</a>
+            </li>
+            <li>
+              <a href="#t">جزییات تور</a>
+            </li>
+            <li>
+              <a href="#B">مشخصات اولیه</a>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </nav> */
+}

@@ -248,6 +248,9 @@
     background-color: #ebf7f5;
     margin-bottom: 30px;
   }
+  .tableContainer th {
+    width: 100px;
+  }
   .firstRow {
     background-color: #707070;
   }
@@ -256,5 +259,14 @@
     display: flex;
     justify-content: flex-end;
     text-align: right;
+  }
+  .tableContainerlast {
+    width: 98%;
+    border-radius: 17px;
+    height: 415px;
+    font-size: 13px;
+    color: #707070 !important;
+    background-color: #ebf7f5;
+    margin-bottom: 30px;
   }
 }
