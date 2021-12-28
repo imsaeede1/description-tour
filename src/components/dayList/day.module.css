@@ -1,17 +1,33 @@
 .dayBox {
-  width: 325px;
-  height: auto;
+  height: fit-content;
   margin: 10px;
+  width: 360px;
+  flex-wrap: wrap;
   border-radius: 7px;
   background-color: #ebf7f5;
+  float: right;
 }
 .container {
-  display: flex;
   justify-content: end;
   flex-direction: row-reverse;
-  width: 690px;
-
   flex-wrap: wrap;
+}
+.green {
+  background-color: rgb(176, 233, 165) !important;
+}
+.green2 {
+  background-color: rgb(184, 96, 187) !important;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 5px;
+}
+.red {
+  border: 2px solid rgb(236, 74, 34) !important;
+}
+.detailp {
+  font-size: 13px;
+  color: #555555;
+  text-align: end;
 }
 .headTitle {
   border-bottom: 1.5px rgb(155, 154, 154) solid;
@@ -29,7 +45,35 @@
   margin: 3px 14px 10px 10px;
   background-color: #f1f9f8;
 }
-
+.flewRowDay {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 12px;
+  justify-content: space-between;
+  border-radius: 7px;
+  border: #9e9e9e 1px solid;
+  margin: 3px 14px 10px 10px;
+  background-color: #f1f9f8;
+  padding: 0 9px;
+}
+.inputBoxs {
+  border-radius: 5px;
+  outline: none;
+  border: 1px rgb(219, 219, 219) solid;
+  text-align: right;
+  width: 45%;
+  height: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: white;
+  color: black;
+}
+.tedadi {
+  position: absolute;
+  color: rgb(243, 16, 16);
+  margin-top: 27px;
+  background-color: white;
+}
 .costHeader {
   font-size: 15px;
   font-weight: 600;
@@ -98,6 +142,12 @@
   height: 80px;
   margin: -5px 10px 0 10px;
 }
+.imgBox2 {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  margin: -5px 10px 0 10px;
+}
 
 .textModal {
   font-size: 12px;
@@ -107,6 +157,14 @@
 .imgPriceBox {
   border: #d9e2e1 1px solid;
   border-radius: 7px;
+}
+.weather {
+  margin-right: 8px;
+}
+.imgWeatherBox {
+  border: #d9e2e1 1px solid;
+  border-radius: 7px;
+  margin: auto;
 }
 .imgPriceBox:hover {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -132,6 +190,8 @@
 }
 .titlepText {
   margin: 8px;
+
+  width: 100px;
 }
 
 .priceOtherBox {
@@ -147,9 +207,26 @@
   border: #cacccc 1px solid;
   border-radius: 7px;
 }
+@media (max-width: 1018px) {
+  .dayBox {
+    height: fit-content;
+    margin: 10px;
+    width: 438px;
+    border-radius: 7px;
+    background-color: #ebf7f5;
+  }
+}
 @media (max-width: 768px) {
   .container {
     display: flex;
+    width: 350px;
     flex-direction: column;
+  }
+  .dayBox {
+    height: fit-content;
+    margin: 10px;
+    width: 320px;
+    border-radius: 7px;
+    background-color: #ebf7f5;
   }
 }

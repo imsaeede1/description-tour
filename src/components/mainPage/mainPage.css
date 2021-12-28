@@ -1,0 +1,57 @@
+.rmdp-container .rmdp-input {
+  background-color: #ebf7f5;
+  outline: none;
+  border: none;
+  margin: 5px 0px 0 0;
+  border-radius: 10px;
+  height: 39px;
+  width: 105.5% !important;
+  padding: 5px;
+  text-align: right;
+}
+.boxDate {
+  width: 70%;
+}
+.textDateBox {
+  width: 40%;
+}
+.textBox {
+  width: 50%;
+}
+.textMavaredBox {
+  width: 19%;
+  margin-left: -2px;
+  margin-right: 20px;
+}
+.textCost {
+  width: 100px;
+}
+
+.lt {
+  text-align: center;
+}
+.inputBoxSelect {
+  background-color: #ebf7f5;
+  outline: none;
+  border: none;
+  margin: 8px 0px 0 0;
+  border-radius: 10px;
+  height: 39px;
+  width: 100% !important;
+  padding: 5px;
+}
+.inputBoxSelect .It {
+}
+@media (max-width: 768px) {
+  .rmdp-container .rmdp-input {
+    background-color: #ebf7f5;
+    outline: none;
+    border: none;
+    margin: 5px 0px 0 0;
+    border-radius: 10px;
+    height: 39px;
+    width: 215px;
+    padding: 5px;
+    text-align: right;
+  }
+}

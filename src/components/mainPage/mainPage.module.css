@@ -1,10 +1,12 @@
 .container {
   width: 90%;
   height: auto;
+
   border-radius: 10px;
   margin: auto;
   margin-bottom: 40px;
 }
+
 .nav {
   display: flex;
   color: rgb(51, 51, 51);
@@ -36,26 +38,92 @@
   margin-right: -15px;
 }
 .mainForm {
-  width: 100%;
+  width: 98%;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 60px;
-  display: flex;
-  justify-content: space-around;
+  margin: auto;
   font-size: 12px;
 }
+.mainForm3 {
+  width: 310px;
+  display: flex;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.mainFormTodo {
+  width: 299px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 13px;
+  margin-left: 9px;
+}
+.inputName {
+  border-bottom: 2px solid #d6d6d6;
+  border-top: #ebf7f5;
+  border-right: #ebf7f5;
+  border-left: #ebf7f5;
+  background-color: #ebf7f5;
+  width: 75px;
+  margin: 0 5px;
+  padding: 3px;
+  text-align: end;
+  color: #777474;
+  outline: none;
+  height: 19px;
+}
+.inputName2 {
+  border-bottom: 2px solid #d6d6d6;
+  border-top: #ebf7f5;
+  border-right: #ebf7f5;
+  border-left: #ebf7f5;
+  background-color: #ebf7f5;
+  width: 75px;
+  margin: 0 5px;
+  padding: 3px;
+  text-align: end;
+  color: #777474;
+  outline: none;
+  resize: none;
+  height: 28px;
+}
+.inputBtn {
+  width: 20px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #bebebe;
+}
 .formBox {
-  width: 27%;
+  width: 29.5%;
+  background-color: aqua;
   display: flex;
   margin-top: 20px;
   flex-direction: column;
   text-align: center;
 }
+.formBox2 {
+  width: 330px;
+  display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+  text-align: center;
+}
 .formInput {
   display: flex;
+  margin: 5px 15px;
   flex-direction: row-reverse;
-  justify-content: flex-end;
+  justify-content: space-between;
   text-align: center;
+  width: 300px;
+  height: fit-content;
+}
+.formInput22 {
+  display: flex;
+
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  text-align: center;
+  height: fit-content;
 }
 .formChecked {
   display: flex;
@@ -63,13 +131,53 @@
   justify-content: space-evenly;
   text-align: center;
   width: 280px;
-  margin-right: 160px;
 }
+.formChecked2 {
+  display: flex;
+  flex-direction: row-reverse;
+
+  text-align: center;
+  width: 258px;
+}
+.formChecked3 {
+  display: flex;
+  flex-direction: row-reverse;
+
+  text-align: center;
+  width: 252px;
+}
+.formCheckedRezerv {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  width: 302px;
+  margin-left: -50px;
+}
+.filterSelect {
+  width: 100%;
+  margin: 7px 0 0 0;
+  outline: none;
+}
+.filterSelect div {
+  background-color: #ebf7f5;
+  outline: none;
+  border: #ebf7f5 1px solid;
+  border-radius: 10px;
+  outline: none;
+}
+/* css-1s2u09g-control */
+
 .check {
   background-color: lightblue !important;
   height: 20px;
   width: 20px;
   margin: 0 6px 1px 0;
+}
+.check2 {
+  background-color: lightblue !important;
+  height: 20px;
+  width: 20px;
+  margin: 0 0 1px 0px;
 }
 
 .checkBox {
@@ -79,28 +187,116 @@
   width: 220px;
   margin-top: 12px;
 }
+.checkBox2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+
+  width: 125px;
+  margin-top: 12px;
+}
+.checkBox3 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 125px;
+  margin-top: 12px;
+}
+.checkBox1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 20px;
+  margin-top: 12px;
+}
 .inputBox {
-  background-color: rgb(227, 237, 247);
+  background-color: #ebf7f5;
+  outline: none;
+  border: none;
+  margin: 8px 0px 0 0;
+  border-radius: 10px;
+  height: 39px;
+  width: 100% !important;
+  padding: 5px;
+  text-align: right;
+}
+.inputBoxSelect {
+  background-color: #ebf7f5;
+  outline: none;
+  border: none;
+  margin: 8px 0px 0 0;
+  border-radius: 10px;
+  height: 39px;
+  width: 100% !important;
+  padding: 5px;
+  text-align: center;
+}
+.inputBoxbig {
+  background-color: #ebf7f5;
+  outline: none;
+  border: none;
+  margin: 8px 0px 0 0;
+  border-radius: 10px;
+  height: 109px;
+  width: 100% !important;
+  padding: 5px;
+  text-align: right;
+  resize: none;
+}
+
+.inputBoxRezerv {
+  background-color: #ebf7f5;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin: 2px;
+  height: 39px;
+  width: 75px;
+  padding: 5px;
+  text-align: right;
+}
+.inputBox2 {
+  background-color: #ebf7f5;
+  outline: none;
+  border: none;
+  margin: 8px 0px 0 0;
+  border-radius: 10px;
+  height: fit-content;
+  width: 295px;
+  padding: 8px 5px;
+  text-align: right;
+}
+
+.inputBoxTodo {
+  background-color: #ebf7f5;
   outline: none;
   border: none;
   margin: 8px 20px 0 0;
   border-radius: 10px;
-  height: 30px;
-  width: 150px;
+  height: 39px;
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
   padding: 5px;
   text-align: right;
 }
+
 .selected {
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
 }
+
 .bigInput {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 62px;
+  width: 98%;
+  font-size: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.formReserv {
   font-size: 12px;
 }
+
 .flexInput {
   display: flex;
   flex-direction: column;
@@ -112,19 +308,19 @@
   margin: 8px 20px 0 0;
   border-radius: 10px;
   height: 45px;
-  width: 460px;
+  width: 450px;
   padding: 5px;
   text-align: right;
   margin: 10px 0;
 }
 .inputbig2Box {
-  background-color: rgb(227, 237, 247);
+  background-color: #ebf7f5;
   outline: none;
   border: none;
-  margin: 8px 20px 0 0;
+  margin: 8px 27px 0 0;
   border-radius: 10px;
   height: 100px;
-  width: 460px;
+  width: 205px;
   padding: 5px;
   text-align: right;
 }
@@ -134,7 +330,7 @@
 .checkInputBox {
   font-size: 13px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   margin-right: 52px;
 }
 @media (max-width: 768px) {
@@ -145,14 +341,15 @@
   }
   .mainForm {
     display: flex;
-    flex-direction: column-reverse;
+
     text-align: right;
     width: 100%;
-    margin-left: -5px;
+    margin: auto;
+    justify-content: center;
   }
   .formInput {
     margin-left: 20px;
-    width: 330px;
+    width: 350px;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -170,27 +367,73 @@
   .inputbig2Box {
     display: flex;
     flex-direction: column;
-    width: 155px;
-    margin-left: 21px;
-    margin-right: 60px;
+    width: 67%;
+    margin-left: -3px;
+  }
+  .textForce {
+    margin-right: 27px;
   }
   .flexInput {
     width: 340px;
   }
-  .text {
-    width: 150px;
-    margin-left: -4px;
+  .textInputBox {
+    background-color: bisque;
   }
 
   .textInput {
     margin-right: 21px;
   }
+  .mainForm3 {
+    width: 300px;
+    display: flex;
+    margin: 5px 0 0 19px;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .formChecked2 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    width: 302px;
+  }
+  .formBox2 {
+    margin-right: 17px;
+  }
+  .formChecked3 {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    width: 302px;
+    margin-left: -7px;
+  }
+  .formCheckedRezerv {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    width: 302px;
+    margin-left: -8px;
+  }
+  .checkBox2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+    width: 178px;
+    margin-top: 12px;
+  }
+  .checkBox3 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 176px;
+    margin-top: 12px;
+  }
   .bigInput {
     margin-right: 10px;
+    display: flex;
+    flex-direction: column-reverse;
   }
-  .inputBox {
-    width: 150px;
-  }
+
   .formChecked {
     width: 340px;
   }

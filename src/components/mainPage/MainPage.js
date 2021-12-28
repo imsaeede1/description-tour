@@ -1,139 +1,255 @@
 import styles from "./mainPage.module.css";
-import React, { useState } from "react";
-import Calendar from "react-calendar";
+import DatePicker from "react-multi-date-picker";
+import persian from "react-date-object/calendars/persian";
+import persian_fa from "react-date-object/locales/persian_fa";
+import "react-multi-date-picker/styles/layouts/prime.css";
+import "./mainPage.css";
+import React from "react";
+import Select from "react-select";
+import makeAnimated from "react-select/animated";
+import CreatableSelect from "react-select/creatable";
+import TodoApp from "./TodoApp/TodoApp";
+import TransForm from "./TransForm";
+import { useState } from "react";
 
-const MainPage = () => {
-  const [value, onChange] = useState(new Date());
+const MainPage = ({ changeHandlerDaste, value }) => {
+  const [isShow, setIsShow] = useState(false);
+  const option = [
+    { label: " آبشار", value: "abshar" },
+    { label: " دریاچه", value: "daryache" },
+  ];
+  const optionDasteBandi = [
+    { label: " ایران گردی", value: "irangardi" },
+    { label: " کمپینگ", value: "camping" },
+    { label: " انفرادی", value: "enferadi" },
+    { label: " خارجی", value: "khareji" },
+    { label: " یکروزه", value: "yekruze" },
+  ];
+  const optionDaraje = [
+    { label: " 1", value: "1" },
+    { label: "2", value: "2" },
+    { label: " 3", value: "3" },
+    { label: "4", value: "4" },
+    { label: "5", value: "5" },
+  ];
+  const optionlavazem = [
+    { label: " کوله پشتی", value: "kuleposhti" },
+    { label: " لباس گرم", value: " lebasgarm" },
+    { label: " پاسپورت", value: "passport" },
+  ];
+
+  const animatedComponents = makeAnimated();
+  function AnimatedMulti() {
+    return (
+      <CreatableSelect
+        closeMenuOnSelect={false}
+        components={animatedComponents}
+        className={styles.filterSelect}
+        isMulti
+        options={option}
+      />
+    );
+  }
   return (
-    <div className={styles.container}>
-      <div className={styles.mainForm}>
-        <div className={styles.formBox}>
-          <div className={styles.formInput}>
-            <p className={styles.text}>زمان پایان تور</p>
-            <input type="text" className={styles.inputBox} />
-          </div>
-          <div className={styles.formInput}>
-            <p className={styles.text}>هزینه</p>
-            <input type="text" className={styles.inputBox} />
-          </div>
-          <div className={styles.formInput}>
-            <p className={styles.text}>درجه سختی</p>
-            <div className={styles.inputBox}>
-              <Calendar onChange={onChange} value={value} />
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.formBox}>
-          <div className={styles.formInput}>
-            <p className={styles.text}>زمان شروع تور</p>
-            <input type="text" className={styles.inputBox} />
-          </div>
-          <div className={styles.formInput}>
-            <p className={styles.text}>جاذبه ها</p>
-            <select
-              class="form-select form-select-sm"
-              aria-label=".form-select-sm example"
-              className={styles.inputBox}
-            >
-              <option selected className={styles.selected}></option>
-              <option value="1">آبشار</option>
-              <option value="2">دریاچه</option>
-            </select>
-          </div>
-          <div className={styles.formInput}>
-            <p className={styles.text}>بیمه</p>
-            <input type="text" className={styles.inputBox} />
-          </div>
-        </div>
-        <div className={styles.formBox}>
-          <div className={styles.formInput}>
-            <p className={styles.text}>نام تور</p>
-            <input type="text" className={styles.inputBox} />
-          </div>
-          <div className={styles.formInput}>
-            <p className={styles.text}>دسته بندی</p>
-            <select
-              class="form-select form-select-sm"
-              aria-label=".form-select-sm example"
-              className={styles.inputBox}
-            >
-              <option selected className={styles.selected}></option>
-              <option value="1">ایرانگردی</option>
-              <option value="2">کمپینگ</option>
-              <option value="3">انفرادی</option>
-              <option value="4">خارجی</option>
-            </select>
-          </div>
-          <div className={styles.formInput}>
-            <p className={styles.text}>ویزا</p>
-            <input type="text" className={styles.inputBox} />
-          </div>
-        </div>
-      </div>
-      <div className={styles.checkInputBox}>
-        <div className={styles.formChecked}>
-          <p className={styles.text}>:نوع سفر</p>
-          <div className={styles.checkBox}>
-            <div class="form-check">
-              <input
-                className={`form-check-input ${styles.check}`}
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                لوکس
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                className={`form-check-input ${styles.check}`}
-                type="checkbox"
-                value=""
-                id="flexCheckChecked"
-                defaultChecked
-              />
-              <label class="form-check-label" for="flexCheckChecked">
-                نقلی
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                className={`form-check-input ${styles.check}`}
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                عادی
-              </label>
-            </div>
+    <div className={styles.container} id="specification">
+      <div
+        className={`mt-2 d-flex justify-content-lg-around justify-content-md-end justify-content-sx-center ${styles.mainForm}`}
+      >
+        <div className={styles.formInput}>
+          <p className="textDateBox">زمان پایان </p>
+          <div className="boxDate">
+            <DatePicker
+              className="rmdp-prime"
+              showOtherDays
+              calendar={persian}
+              locale={persian_fa}
+              calendarPosition="bottom-right"
+            />
           </div>
         </div>
         <div className={styles.formInput}>
-          <p className={styles.text}>لوازم ضروری</p>
+          <p className="textDateBox">زمان شروع </p>
+          <div className="boxDate">
+            <DatePicker
+              className="rmdp-prime"
+              showOtherDays
+              calendar={persian}
+              locale={persian_fa}
+              calendarPosition="bottom-right"
+            />
+          </div>
+        </div>
+        <div className={styles.formInput}>
+          <p className="textBox">نام تور</p>
+          <input type="text" className={styles.inputBox} />
+        </div>
+        <div className={styles.formInput}>
+          <p className="textBox">هزینه</p>
+          <input type="text" className={styles.inputBox} />
+        </div>
+
+        <div className={styles.formInput}>
+          <p className="textBox">اسم تور لیدر</p>
+          <input type="text" className={styles.inputBox} />
+        </div>
+
+        <div className={styles.formInput}>
+          <p className="textBox">درجه سختی</p>
           <select
             class="form-select form-select-sm"
             aria-label=".form-select-sm example"
-            className={styles.inputBox}
+            className="inputBoxSelect"
           >
-            <option selected className={styles.selected}></option>
-            <option value="1">کوله پشتی</option>
-            <option value="2">لباس گرم</option>
-            <option value="3">پاسپورت</option>
+            <option
+              selected
+              hidden
+              disabled
+              className={styles.selected}
+            ></option>
+            <option className="It" value="omumi">
+              1
+            </option>
+            <option className="It" value="darbasti">
+              2
+            </option>
+            <option className="It" value="omumi">
+              3
+            </option>
+            <option className="It" value="darbasti">
+              4
+            </option>
+            <option className="It" value="darbasti">
+              5
+            </option>
           </select>
         </div>
-      </div>
-      <div className={styles.bigInput}>
-        <div className={styles.flexInput}>
-          <div className={styles.formInput}>
-            <p className={styles.textInput}>محل حرکت</p>
-            <input type="text" className={styles.inputbigBox} />
-          </div>
-          <div className={styles.formInput}>
-            <p className={styles.text}>محتوای تور</p>
+        <div className={styles.formInput}>
+          <p className="textBox">جاذبه ها</p>
+          {AnimatedMulti()}
+        </div>
+        <div className={styles.formInput}>
+          <p className="textBox">دسته بندی</p>
+          <CreatableSelect
+            value={value}
+            onChange={changeHandlerDaste}
+            closeMenuOnSelect={false}
+            components={animatedComponents}
+            className={styles.filterSelect}
+            isMulti
+            options={optionDasteBandi}
+          />
+        </div>
+        <div className={`d-flex justify-self-md-end ${styles.formInput}`}>
+          <p className="textBox">لوازم ضروری</p>
+          <CreatableSelect
+            closeMenuOnSelect={false}
+            components={animatedComponents}
+            className={styles.filterSelect}
+            isMulti
+            options={optionlavazem}
+          />
+        </div>
+
+        {/* <div className={styles.mainForm3}>
+          <div className={styles.formInput22}>
+            <p className="textMavaredBox">موارد ضروری</p>
             <input type="text" className={styles.inputbig2Box} />
+          </div>
+        </div>
+        <div className={styles.mainFormTodo}>
+          <TodoApp />
+          <p className="textCost">هرینه مازاد</p>
+        </div> */}
+        <div className={` ${styles.formInput}`}>
+          <p className="textBox">موارد ضروری</p>
+          <textarea className={styles.inputBoxbig}></textarea>
+        </div>
+        <div className={`d-flex justify-self-md-end ${styles.formInput}`}>
+          <p className="textBox">هزینه مازاد</p>
+          <TodoApp />
+        </div>
+        <div className={styles.formBox2}>
+          <div className={styles.formChecked}>
+            <p className={styles.text}>:نوع سفر</p>
+            <div className={styles.checkBox}>
+              <div class="form-check">
+                <input
+                  className={`form-check-input ${styles.check}`}
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  هوایی
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className={`form-check-input ${styles.check}`}
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  defaultChecked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  زمینی
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  className={`form-check-input ${styles.check}`}
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  ریلی
+                </label>
+              </div>
+            </div>
+          </div>
+          <div className={styles.formChecked2}>
+            <p className={styles.text}>:بیمه</p>
+            <div className={styles.checkBox2}>
+              <div class="form-check">
+                <input
+                  className={`form-check-input ${styles.check2}`}
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+              </div>
+            </div>
+          </div>
+          <div className={styles.formChecked3}>
+            <p className={styles.text}>:ویزا</p>
+            <div className={styles.checkBox3}>
+              <div class="form-check">
+                <input
+                  className={`form-check-input ${styles.check2}`}
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+              </div>
+            </div>
+          </div>
+          <div className={styles.formReserv}>
+            <div className={styles.formCheckedRezerv}>
+              <p className={styles.text}>:رزرو</p>
+              <div className={styles.checkBox3}>
+                <div class="form-check">
+                  <input
+                    onClick={() => setIsShow((prevState) => !prevState)}
+                    className={`form-check-input ${styles.check2}`}
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                </div>
+              </div>
+              {isShow && <TransForm setIsShow={setIsShow} />}
+            </div>
           </div>
         </div>
       </div>
@@ -142,22 +258,3 @@ const MainPage = () => {
 };
 
 export default MainPage;
-
-{
-  /* <nav className={styles.nav}>
-        <div className={styles.menu}>
-          <ul>
-            <li>
-              <a href="#h">گزارشات</a>
-            </li>
-            <li>
-              <a href="#t">جزییات تور</a>
-            </li>
-            <li>
-              <a href="#B">مشخصات اولیه</a>
-            </li>
-            <li></li>
-          </ul>
-        </div>
-      </nav> */
-}

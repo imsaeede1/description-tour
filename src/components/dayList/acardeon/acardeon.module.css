@@ -8,6 +8,10 @@
   margin-bottom: 10px;
   margin-right: -190px;
 }
+.radioBox {
+  display: flex;
+  justify-content: flex-end;
+}
 h5 {
   border-bottom: #ffffff 2px solid;
   padding: 8px 0;
@@ -19,6 +23,7 @@ h5 {
   text-align: right;
   width: 65%;
   padding: 2px;
+  background-color: rgb(255, 255, 255);
 }
 .inputBox1 {
   border-radius: 5px;
@@ -38,6 +43,9 @@ h5 {
   padding: 2px;
   margin-bottom: 5px;
 }
+.cnterItem {
+  margin: 0 20px;
+}
 .formInput {
   display: flex;
   font-size: 14px;
@@ -54,6 +62,9 @@ h5 {
 .text1 {
   margin: 7px;
 }
+.shabi {
+  font-size: 11px;
+}
 .boxes {
   display: flex;
   width: 230px;
@@ -66,7 +77,8 @@ h5 {
   font-size: 11px !important;
 }
 .btnacardeon {
-  margin: -12px 0 0 0;
-  padding: 0;
+  margin-bottom: -12px;
+  margin-top: -19px;
+  padding: 1px 5px;
   background-color: #ffffff;
 }

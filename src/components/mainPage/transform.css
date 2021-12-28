@@ -1,0 +1,27 @@
+.date-picker1 .rmdp-container .rmdp-input {
+  background-color: #ebf7f5;
+  outline: none;
+  border: none;
+  margin: 2px;
+  border-radius: 10px;
+  height: 39px;
+  width: 80px !important;
+  padding: 5px;
+  text-align: right;
+}
+
+.dateBoxex {
+  width: 460px;
+  display: flex;
+  justify-content: space-between;
+}
+.inputBoxRezerv {
+  background-color: #ebf7f5;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  height: 39px;
+  width: 110px;
+  padding: 5px;
+  text-align: right;
+}
